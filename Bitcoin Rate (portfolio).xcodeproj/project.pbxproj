@@ -13,6 +13,8 @@
 		580C7D8A25C47CCB0029C0BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 580C7D8825C47CCB0029C0BE /* Main.storyboard */; };
 		580C7D8C25C47CCC0029C0BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 580C7D8B25C47CCC0029C0BE /* Assets.xcassets */; };
 		580C7D8F25C47CCC0029C0BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 580C7D8D25C47CCC0029C0BE /* LaunchScreen.storyboard */; };
+		580C7D9825C47CEB0029C0BE /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C7D9725C47CEB0029C0BE /* CoinData.swift */; };
+		580C7D9C25C47CFD0029C0BE /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C7D9B25C47CFD0029C0BE /* CoinManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		580C7D8B25C47CCC0029C0BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		580C7D8E25C47CCC0029C0BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		580C7D9025C47CCC0029C0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		580C7D9725C47CEB0029C0BE /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
+		580C7D9B25C47CFD0029C0BE /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,39 @@
 			children = (
 				580C7D8225C47CCB0029C0BE /* AppDelegate.swift */,
 				580C7D8425C47CCB0029C0BE /* SceneDelegate.swift */,
-				580C7D8625C47CCB0029C0BE /* ViewController.swift */,
-				580C7D8825C47CCB0029C0BE /* Main.storyboard */,
+				580C7D9E25C47E2E0029C0BE /* Model */,
+				580C7DA025C47E3C0029C0BE /* View */,
+				580C7DA125C47E4B0029C0BE /* Controller */,
 				580C7D8B25C47CCC0029C0BE /* Assets.xcassets */,
 				580C7D8D25C47CCC0029C0BE /* LaunchScreen.storyboard */,
 				580C7D9025C47CCC0029C0BE /* Info.plist */,
 			);
 			path = "Bitcoin Rate (portfolio)";
+			sourceTree = "<group>";
+		};
+		580C7D9E25C47E2E0029C0BE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				580C7D9725C47CEB0029C0BE /* CoinData.swift */,
+				580C7D9B25C47CFD0029C0BE /* CoinManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		580C7DA025C47E3C0029C0BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				580C7D8825C47CCB0029C0BE /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		580C7DA125C47E4B0029C0BE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				580C7D8625C47CCB0029C0BE /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +167,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				580C7D9825C47CEB0029C0BE /* CoinData.swift in Sources */,
 				580C7D8725C47CCB0029C0BE /* ViewController.swift in Sources */,
 				580C7D8325C47CCB0029C0BE /* AppDelegate.swift in Sources */,
 				580C7D8525C47CCB0029C0BE /* SceneDelegate.swift in Sources */,
+				580C7D9C25C47CFD0029C0BE /* CoinManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53JC2F788B;
 				INFOPLIST_FILE = "Bitcoin Rate (portfolio)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +341,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53JC2F788B;
 				INFOPLIST_FILE = "Bitcoin Rate (portfolio)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
